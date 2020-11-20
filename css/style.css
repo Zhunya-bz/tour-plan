@@ -1,0 +1,14 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+.header {
+  background-color: #fff;
+  color: blue;
+}
+/*# sourceMappingURL=style.css.map */
