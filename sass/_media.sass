@@ -1,7 +1,7 @@
-@media ( max-width: 1200px )
+@media ( max-width: 1200px )//descktop
   .container
     max-width: 960px
-@media ( max-width: 992px )
+@media ( max-width: 992px )//ipad
   .container
     max-width: 700px
   .logo
@@ -15,13 +15,16 @@
     &-menu
       padding-top: 22px
       padding-bottom: 22px
+      justify-content: space-around
       &__link
         font-size: 12px
         line-height: 15px
   .search
     &__input
       width: 340px
-
+.slider
+  max-width: 100%
+  height: 100%
 @media ( max-width: 767px ) //мобильная версия
   .container
     max-width: 576px
@@ -69,7 +72,21 @@
       &__offer
         order: -1
         margin-left: 0
-
-@media ( max-width: 576px )
+  .slider
+    width: 100%
+  .swiper-container
+    width: 100%
+    height: 320px
+@media ( max-width: 576px )//iphon
   .logo
     width: 99px
+    font-size: 13.4237px
+    line-height: 13px
+  .hotel
+    &-info
+      &__stars
+        margin-right: 20px
+    &-grid
+      margin-top: 18px
+  .swiper-container
+    height: 179px
