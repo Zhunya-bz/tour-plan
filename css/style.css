@@ -16,7 +16,6 @@ body {
 
 img {
   max-width: 100%;
-  height: 100%;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -601,13 +600,11 @@ template {
   font-weight: bold;
 }
 
-.slider {
-  width: 728px;
-}
-
 .swiper-container {
   width: 100%;
   height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: relative;
   border-radius: 8px;
 }
@@ -624,7 +621,11 @@ template {
   z-index: 10;
 }
 
-.swiper-container-button {
+.slider {
+  width: 728px;
+}
+
+.slider-button {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -640,14 +641,21 @@ template {
   background-color: transparent;
 }
 
-.swiper-container-button_next {
+.slider-button_next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
 }
 
-.swiper-container-button_prev {
+.slider-button_prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -783,6 +791,7 @@ template {
     margin-top: 18px;
   }
   .swiper-container {
+    width: 100%;
     height: 179px;
   }
 }
