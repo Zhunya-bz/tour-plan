@@ -14,6 +14,17 @@ var mySwiper = new Swiper('.swiper-container', {
     prevEl: '.slider-button_prev',
   },
 
+    speed: 600,
+  effect: 'coverflow',
+  grabCursor: true,
+  //touchAngle: 45,
+  //watchSlidesProgress: true,
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
   // And if we need scrollbar
   /*scrollbar: {
     el: '.swiper-scrollbar',
