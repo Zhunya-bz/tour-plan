@@ -626,9 +626,14 @@ template {
   font-weight: bold;
 }
 
+.slider {
+  width: 728px;
+  height: 450px;
+}
+
 .swiper-container {
   width: 100%;
-  height: 450px;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
@@ -647,11 +652,7 @@ template {
   z-index: 10;
 }
 
-.slider {
-  width: 728px;
-}
-
-.slider-button {
+.swiper-container-button {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -667,12 +668,12 @@ template {
   background-color: transparent;
 }
 
-.slider-button_next {
+.swiper-container-button_next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
 }
 
-.slider-button_prev {
+.swiper-container-button_prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
 }
@@ -682,6 +683,7 @@ template {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
 }
 
 .booking {
@@ -806,18 +808,22 @@ template {
   color: #fff;
   cursor: pointer;
   text-align: center;
-  padding: 13px 81px;
+  padding: 13px 0;
 }
 
 .map {
   width: 347px;
   height: 213px;
-  background-color: black;
+  border-radius: 10px;
+  coverflow: hidden;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
   }
 }
 
@@ -848,11 +854,30 @@ template {
   .search__input {
     width: 340px;
   }
-}
-
-.slider {
-  max-width: 100%;
-  height: 100%;
+  .slider {
+    width: 100%;
+  }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .hotel-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking {
+    width: 340px;
+  }
+  .map {
+    width: 340px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -928,10 +953,24 @@ template {
   }
   .slider {
     width: 100%;
+    height: 350px;
   }
   .swiper-container {
     width: 100%;
     height: 320px;
+  }
+  .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
   }
 }
 
@@ -947,9 +986,16 @@ template {
   .hotel-grid {
     margin-top: 18px;
   }
+  .slider {
+    height: 179px;
+    width: 100%;
+  }
   .swiper-container {
     width: 100%;
-    height: 179px;
+    height: 100%;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
