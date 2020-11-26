@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.swiper-container', {
+var hotelSwiper = new Swiper('#hotel-slider', {
   // Optional parameters
   //direction: 'vertical',
   loop: true,
@@ -29,4 +29,23 @@ var mySwiper = new Swiper('.swiper-container', {
   /*scrollbar: {
     el: '.swiper-scrollbar',
   },*/
+})
+
+var mySwiper = new Swiper('.reviews-slider', {
+  // Optional parameters
+  //direction: 'vertical',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.slider-button_next',
+    prevEl: '.slider-button_prev',
+  },
+    speed: 600,
+  effect: 'coverflow',
+  grabCursor: true,
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 })
