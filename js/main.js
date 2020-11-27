@@ -38,11 +38,11 @@ var mySwiper = new Swiper('.reviews-slider', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button_next',
-    prevEl: '.slider-button_prev',
+    nextEl: '.reviews-slider__button_next',
+    prevEl: '.reviews-slider__button_prev',
   },
     speed: 600,
-  effect: 'coverflow',
+  //effect: 'coverflow',
   grabCursor: true,
   keyboard: {
     enabled: true,
