@@ -48,4 +48,5 @@ var mySwiper = new Swiper('.reviews-slider', {
     enabled: true,
     onlyInViewport: false,
   },
+  autoHeight: true,
 })

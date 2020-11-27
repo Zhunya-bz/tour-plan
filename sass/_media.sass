@@ -43,6 +43,14 @@
     width: 340px
   .newsletter
     padding: 92px 0 93px 0
+  .reviews
+    &-slider
+      &__item
+        max-width: 580px
+    &__title
+      font-size: 30px
+      line-height: 38px
+      margin-bottom: 50px
 
 @media ( max-width: 767px ) //мобильная версия
   .container
@@ -99,24 +107,57 @@
     width: 100%
     //min-height: 100%
     height: 320px
-  .hotel-right
-    flex-direction: column
-    min-height: 450px
+  .hotel
+    padding-bottom: 40px
+    &-right
+      flex-direction: column
+      min-height: 450px
+
   .booking
     width: 100%
   .map
     width: 100%
   .newsletter
     padding: 76px 0 83px
-
     &-wrapper
       flex-direction: column
       max-width: 576px
       width: 88%
       align-items: flex-start
-
-    &__title
+    &-title
+      font-weight: 300
+      font-size: 20px
+      line-height: 25px
       margin-bottom: 37px
+      &__strong
+        font-size: 30px
+        line-height: 38px
+        margin-top: 5px
+  .reviews
+    &__title
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      padding: 0 38px
+      margin-bottom: 42px
+    &-slider
+      // overflow: auto
+      height: auto
+      &__item
+        //max-width: 580px
+        padding: 0 30px 30px
+        &::after, &::before
+          display: none
+      &__button
+        top: 32px
+        &_prev
+          left: 50%
+          transform: translate(-50%,0)
+          margin-left: -92px
+        &_next
+          right: 50%
+          transform: translate(50%,0)
+          margin-right: -92px
 
 @media ( max-width: 576px )//iphon
   .logo
@@ -129,6 +170,7 @@
         margin-right: 20px
     &-grid
       margin-top: 18px
+      // height: 403px
   .slider
     height: 179px
     width: 100%
@@ -139,6 +181,8 @@
   .hotel
     &__slider
       margin-bottom: 20px
+    &-right
+      min-height: 403px
   .newsletter
     padding: 76px 0 83px 0
     height: 319px
@@ -146,3 +190,5 @@
       margin-bottom: 37px
   .subscribe
     width: 100%
+  .map
+    height: 173px
