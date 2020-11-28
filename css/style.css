@@ -981,7 +981,8 @@ template {
 .reviews-slider__button {
   position: absolute;
   top: 50%;
-  transorm: translateY(-50%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -989,18 +990,18 @@ template {
   background-position: center;
   border: none;
   background-color: transparent;
-  cursor: poiner;
+  cursor: pointer;
   z-index: 50;
 }
 
 .reviews-slider__button_prev {
   background-image: url(../img/arrow-left.svg);
-  left: 0;
+  left: 15px;
 }
 
 .reviews-slider__button_next {
   background-image: url(../img/arrow-right.svg);
-  right: 0;
+  right: 15px;
 }
 
 .reviews-slider__profile {
