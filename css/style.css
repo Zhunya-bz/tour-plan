@@ -1214,8 +1214,13 @@ template {
   grid-column: 3/5;
 }
 
+.footer__legal {
+  margin-left: 70px;
+}
+
 .footer__contact-details {
   grid-column: span 2;
+  padding-top: 10px;
 }
 
 .footer__contact-form {
@@ -1315,6 +1320,8 @@ template {
   line-height: 15px;
   color: #BDBDBD;
   margin-bottom: 23px;
+  height: 123px;
+  resize: none;
 }
 
 .footer__button {
@@ -1334,7 +1341,36 @@ template {
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  color: #BDBDBD;
+  color: #E0E0E0;
+}
+
+.footer__bottom {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2/5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 102px;
+}
+
+.footer__PS-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  width: 283px;
+  margin-left: 37%;
 }
 
 @media (max-width: 1200px) {
