@@ -110,19 +110,31 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
-  &__bottom
-    grid-column: 2/5
-    display: flex
-    justify-content: space-between
-    margin-top: 102px
+  //&__bottom
+   // grid-column: 2/5
+    // display: flex
+    // justify-content: space-between
+   // margin-top: 102px
   &__PS-link
-    display: flex
-    justify-content: space-between
-    align-self: center
-    font-weight: normal
-    font-size: 12px
-    line-height: 15px
-    width: 283px
-    margin-left: 37%
-
+    // display: flex
+    // justify-content: space-between
+    // align-self: center
+    grid-row: span 2
+    grid-column: 2/4
+    justify-self: center
+    align-self: self-end
+    // width: 283px
+    //margin-left: 37%
+  &__link
+    &_small
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      margin-right: 10px
+      text-decoration: none
+      color: $light
   &__pay
+    grid-row: span 2
+    grid-column: 4
+    justify-self: end
+    align-self: self-end
