@@ -31,13 +31,14 @@
     &-details
       grid-column: span 2
       padding-top: 10px
+    &-form
+      grid-column: span 2
   &__text
     font-weight: normal
     font-size: 14px
     line-height: 160%
     color: $footer-text
-    &-form
-      grid-column: span 2
+
   &__form
     display: flex
     align-items: center
@@ -122,15 +123,21 @@
    // grid-column: 2/5
     // display: flex
     // justify-content: space-between
-   // margin-top: 102px
+   // margin-top: 
+  /*&__bottom
+   display: flex
+   grid-row: 5
+   grid-column: 2/4
+   justify-self: center
+   align-self: self-end*/
   &__PS-link
     // display: flex
     // justify-content: space-between
     // align-self: center
     grid-row: span 2
     grid-column: 2/4
+    align-self: flex-end
     justify-self: center
-    align-self: self-end
     // width: 283px
     //margin-left: 37%
   &__link
@@ -144,5 +151,5 @@
   &__pay
     grid-row: span 2
     grid-column: 4
-    justify-self: end
-    align-self: self-end
+    justify-self: flex-end
+    align-self: flex-end
