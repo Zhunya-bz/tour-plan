@@ -1175,8 +1175,8 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  grid-auto-rows: minmax(50px, -webkit-min-content);
-  grid-auto-rows: minmax(50px, min-content);
+  grid-auto-rows: minmax(40px, -webkit-min-content);
+  grid-auto-rows: minmax(40px, min-content);
   grid-gap: 20px;
 }
 
@@ -1606,6 +1606,7 @@ template {
     bottom: 0;
     top: 70px;
     padding-top: 30px;
+    overflow: scroll;
   }
   .navbar-bottom_active {
     display: block;
@@ -1973,7 +1974,7 @@ template {
     -ms-flex-item-align: end;
         align-self: flex-end;
     justify-self: flex-start;
-    margin-top: 10px;
+    padding-top: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
