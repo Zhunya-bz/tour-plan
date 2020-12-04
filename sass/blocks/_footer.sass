@@ -1,7 +1,7 @@
 .footer
   background-color: $dark
   color: $light
-  padding: 108px 0 46px
+  padding: 108px 0 16px
   &-wrapper
     display: grid
     grid-template-columns: repeat(4, minmax(min-content, 1fr))
@@ -31,6 +31,11 @@
     &-details
       grid-column: span 2
       padding-top: 10px
+  &__text
+    font-weight: normal
+    font-size: 14px
+    line-height: 160%
+    color: $footer-text
     &-form
       grid-column: span 2
   &__form
@@ -70,6 +75,7 @@
     &__text
       color: $footer-text
       margin-bottom: 22px
+
   &__link
     text-decoration: none
     color: inherit
