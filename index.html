@@ -33,7 +33,7 @@
               class="search__input"
               placeholder="Search Location"
             />
-            <button class="search__button">
+            <button class="button search__button">
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
@@ -79,7 +79,7 @@
                   class="search__input"
                   placeholder="Search Location"
                 />
-                <button class="search__button">
+                <button class="button search__button">
                   <img src="img/search.svg" alt="Icon: search" />
                 </button>
               </form>
@@ -221,7 +221,9 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <div class="button booking__button">View Other Options</div>
+              <div data-toggle="modal" class="button booking__button">
+                View Other Options
+              </div>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -251,13 +253,18 @@
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
 
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
-          <button class="subscribe__button">Send</button>
+          <button class="button subscribe__button">Send</button>
         </form>
       </div>
     </section>
@@ -403,10 +410,10 @@
           <!--swiper-wrapper-->
           <!-- If we need navigation buttons -->
           <button
-            class="reviews-slider__button reviews-slider__button_prev"
+            class="button reviews-slider__button reviews-slider__button_prev"
           ></button>
           <button
-            class="reviews-slider__button reviews-slider__button_next"
+            class="button reviews-slider__button reviews-slider__button_next"
           ></button>
         </div>
         <!--reviews-slider swiper-container-->
@@ -422,7 +429,7 @@
             <img src="img/activity-1.jpg" alt="" class="card__image" />
             <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="button card__button">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
@@ -430,7 +437,7 @@
             <img src="img/activity-2.jpg" alt="" class="card__image" />
             <h3 class="card__title">Gymkhana club golf course</h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="button card__button">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
@@ -440,7 +447,7 @@
               Tamarind falls hiking trip&nbsp;- full day
             </h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="button card__button">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
@@ -448,7 +455,7 @@
             <img src="img/activity-4.jpg" alt="" class="card__image" />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <!-- /.card__title -->
-            <button class="card__button">Book Now</button>
+            <button class="button card__button">Book Now</button>
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
@@ -606,23 +613,24 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title_small">Send us a message</h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="form footer__form">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               /><input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
-                cols="30"
-                rows="10"
-                class="footer__massage"
+                class="message footer__message"
                 placeholder="Message"
+                name="message"
               ></textarea>
-              <button class="button footer__button">Send</button>
+              <button class="button button-form footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
@@ -645,7 +653,45 @@
       </div>
       <!-- container -->
     </footer>
-
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="econ: close" />
+        </a>
+        <h3 class="modal__title modal__title_small">Booking</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+          /><input
+            type="text"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+          />
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="button button-form modal__button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

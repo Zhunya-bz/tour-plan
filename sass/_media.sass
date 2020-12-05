@@ -107,6 +107,9 @@
     &__pay
       grid-row: 5
       grid-column: 7/13
+  .modal
+    &__dialog
+      padding: 30px 60px
 @media ( max-width: 767px ) //мобильная версия
   .container
     max-width: 576px
@@ -280,6 +283,15 @@
       flex-basis: 100%
     &__PS-link
       grid-column: 1/9
+  .modal
+    &__dialog
+      padding: 30px 40px
+      width: 60%
+    &__info
+      flex-basis: 100%
+    &__button
+      order: 2
+      margin-top: 10px
 @media ( max-width: 576px )//iphon
   .logo
     width: 99px
@@ -395,3 +407,11 @@
       align-self: flex-end
       justify-self: flex-start
       padding-top: 25px
+  .modal
+    &__dialog
+      padding: 20px 20px
+      width: 70%
+    &__button
+      width: 100%
+    &__title
+      font-size: 14px
