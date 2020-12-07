@@ -85,4 +85,33 @@ function closeModal(event){
   modalOverlay.removeClass('modal__overlay_visible');
   modalDialog.removeClass('modal__dialog_visible');
 }
+//обработка форм
+$('.form').each(function(){
+  $(this).validate({
+    errorClass: "invalid",
+    rules: {
+      name: {
+        required: true,
+        minlength: 2
+    }
+  },
+    messages: {
+    name: {
+      required: "Specify your name",
+      minlength: "Name must be more than 2 letters"
+    },
+    email: {
+      required: "We need your email address to contact you",
+      email: "Your email address must be in the format of name@domain.com"
+    },
+    phone: {
+      required: "Phone is required"
+    }
+  }
+})
+
+})
+
+$('.phone_us').mask('+7(000) 000-0000');
+
 })

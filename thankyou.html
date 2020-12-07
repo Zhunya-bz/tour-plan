@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon(1).ico" type="image/x-icon" />
   </head>
   <body>
     <header class="navbar navbar_mobile_fixed">
@@ -286,24 +287,29 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title_small">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              /><input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                />
+              </div>
               <textarea
-                class="footer__massage"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <button class="button footer__button">Send</button>
+              <button class="button button-form footer__button">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>

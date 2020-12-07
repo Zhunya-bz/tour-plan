@@ -9,7 +9,8 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media ( max-width: 992px )//ipad
   .container, .newsletter-wrapper
     max-width: 700px
@@ -72,7 +73,8 @@
       grid-template-columns: repeat(12, 1fr)
       grid-row-gap: 45px
     &__input
-      flex-basis: 48%
+      &-group
+        flex-basis: 48%
     &__logo
       grid-row: 1/2
       grid-column: span 2
@@ -109,7 +111,9 @@
       grid-column: 7/13
   .modal
     &__dialog
-      padding: 30px 60px
+      padding: 30px 60px 0 60px
+    &__button
+      margin-bottom: 30px
 @media ( max-width: 767px ) //мобильная версия
   .container
     max-width: 576px
@@ -222,8 +226,11 @@
   .map
     width: 100%
   .subscribe
+    max-width: 280px
     &__input
-      padding-left: 20px
+      &-group
+        //padding-left: 20px
+        max-width: 215px
   .newsletter
     padding: 76px 0 83px
     &-wrapper
@@ -280,18 +287,20 @@
     height: 255px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__PS-link
       grid-column: 1/9
   .modal
     &__dialog
-      padding: 30px 40px
+      padding: 30px 40px 0 40px
       width: 60%
     &__info
       flex-basis: 100%
     &__button
       order: 2
       margin-top: 10px
+      margin-bottom: 30px
 @media ( max-width: 576px )//iphon
   .logo
     width: 99px
@@ -409,9 +418,11 @@
       padding-top: 25px
   .modal
     &__dialog
-      padding: 20px 20px
+      padding: 20px 20px 0 20px
       width: 70%
+      top: 50%
     &__button
       width: 100%
+      margin-bottom: 20px
     &__title
       font-size: 14px
