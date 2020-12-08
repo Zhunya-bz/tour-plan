@@ -93,6 +93,10 @@ $('.form').each(function(){
       name: {
         required: true,
         minlength: 2
+    },
+    phone: {
+      required: true,
+      minlength: 16 //cj всеми +()  
     }
   },
     messages: {
@@ -105,7 +109,8 @@ $('.form').each(function(){
       email: "Your email address must be in the format of name@domain.com"
     },
     phone: {
-      required: "Phone is required"
+      required: "Phone is required",
+      minlength: "Incorrect phone number"
     }
   }
 })
@@ -114,4 +119,5 @@ $('.form').each(function(){
 
 $('.phone_us').mask('+7(000) 000-0000');
 
+AOS.init();
 })

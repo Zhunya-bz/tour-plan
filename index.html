@@ -11,13 +11,14 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="icon" href="img/favicon(1).ico" type="image/x-icon" />
   </head>
   <body>
     <header class="navbar navbar_mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-right">
             <img
               src="img/horizontal_logo.svg"
               alt="logo: Best Tour Plan"
@@ -39,7 +40,11 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user_mobile_hidden">
+          <a
+            href="#"
+            class="user navbar__user navbar__user_mobile_hidden"
+            data-aos="fade-left"
+          >
             <img
               src="img/user-avatar.jfif"
               alt="Avatar: Nathan"
@@ -193,7 +198,7 @@
           </div>
           <!--slider-->
           <div class="hotel-right">
-            <div class="booking">
+            <div class="booking" data-aos="flip-right" data-aos-duration="1500">
               <div class="booking__info">
                 <div class="booking__price">
                   <span class="booking__start">price starts as</span>
@@ -248,7 +253,11 @@
     <!-- /.hotel -->
 
     <section class="newsletter">
-      <div class="newsletter-wrapper">
+      <div
+        class="newsletter-wrapper"
+        data-aos="zoom-out-down"
+        data-aos-duration="1500"
+      >
         <h2 class="newsletter-title newsletter__title">
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
@@ -265,6 +274,7 @@
               class="subscribe__input"
               placeholder="Your email address"
               name="email"
+              required
             />
           </div>
           <!-- /.newsletter__input-group -->
@@ -277,7 +287,14 @@
 
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people think about us</h2>
+        <h2
+          class="reviews__title"
+          data-aos="fade-down"
+          data-aos-easing="ease"
+          data-aos-duration="1500"
+        >
+          What people think about us
+        </h2>
         <!-- Slider main container -->
         <div class="swiper-container reviews-slider">
           <!-- Additional required wrapper -->
@@ -430,8 +447,16 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card activities__card_1">
-            <img src="img/activity-1.jpg" alt="" class="card__image" />
+          <div
+            class="card activities__card activities__card_1"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+          >
+            <img
+              src="img/activity-1.jpg"
+              alt="photo: Restaurants"
+              class="card__image"
+            />
             <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
             <!-- /.card__title -->
             <button data-toggle="modal" class="button card__button">
@@ -440,8 +465,17 @@
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card_2">
-            <img src="img/activity-2.jpg" alt="" class="card__image" />
+          <div
+            class="card activities__card activities__card_2"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <img
+              src="img/activity-2.jpg"
+              alt="photo: golf"
+              class="card__image"
+            />
             <h3 class="card__title">Gymkhana club golf course</h3>
             <!-- /.card__title -->
             <button data-toggle="modal" class="button card__button">
@@ -450,8 +484,17 @@
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card_3">
-            <img src="img/activity-3.jpg" alt="" class="card__image" />
+          <div
+            class="card activities__card activities__card_3"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <img
+              src="img/activity-3.jpg"
+              alt="photo: waterfall"
+              class="card__image"
+            />
             <h3 class="card__title">
               Tamarind falls hiking trip&nbsp;- full day
             </h3>
@@ -462,8 +505,17 @@
             <!-- /.card__button -->
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card_4">
-            <img src="img/activity-4.jpg" alt="" class="card__image" />
+          <div
+            class="card activities__card activities__card_4"
+            data-aos="flip-left"
+            data-aos-duration="1000"
+            data-aos-delay="900"
+          >
+            <img
+              src="img/activity-4.jpg"
+              alt="photo: cruise"
+              class="card__image"
+            />
             <h3 class="card__title">The blue marine discovery quest</h3>
             <!-- /.card__title -->
             <button data-toggle="modal" class="button card__button">
@@ -720,6 +772,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
